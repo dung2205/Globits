@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+
+.A1{
+    width: 1000px;
+    height: 2000px;
+    border: 2px solid #EC3413;
+    position: relative;     /*Nhận cửa sổ trình duyệt làm cha và đi theo nó*/
+}
+
+.A2{
+    position: absolute;     /*Nhận cửa sổ trình duyệt làm cha và đi theo nó*/
+    width: 200px;
+    height: 100px;
+    top: 0;                 
+    left: 0;                /*top left cho biết thẻ nằm ở vị trí góc trên bên trái của cửa sổ trình duyệt*/
+    border: 2px solid #7D3102;
+    position: fixed;        /*Nhận cửa sổ trình duyệt làm cha, giữ nguyên vị trí dù cha bị scroll*/
+}
+
+.A3{
+    position: absolute;     /*Nhận cửa sổ trình duyệt làm cha và đi theo nó*/
+    width: 200px;
+    height: 100px;
+    bottom: 0;
+    left: 0;                 /*bottom left cho biết thẻ nằm ở vị trí góc dưới bên trái của cửa sổ trình duyệt*/
+    border: 2px solid #FF8040;
+    position: fixed;        /*Nhận cửa sổ trình duyệt làm cha, giữ nguyên vị trí dù cha bị scroll*/
+}
+
+.A4{
+    width: 900px;
+    height: 407px;
+    border: 2px solid #0B11F4;
+    margin-top: 110px;
+    position: absolute;     /*Nhận thẻ A1 làm cha và đi theo A1*/
+    display: flex;          
+    justify-content: center;    /*Căn giữa các phần tử theo chiều ngang*/
+    align-items: center;        /*Căn giữa các phần tử theo chiều dọc*/
+}
+
+.A5{
+    position: sticky;       /*Thẻ A5 sẽ bám lấy thẻ A4 khi thẻ A4 bị di chuyển*/
+    margin-left: 200px;
+    margin-top: 100px;
+    width: 500px;
+    height: 200px;
+    border: 2px solid #800080;
+    top: 250px;
+}
+
+.A6{
+    position: absolute;     /*Nhận thẻ A4 làm cha và đi theo A4*/
+    width: 200px;
+    height: 100px;
+    border: 2px solid yellow;
+}
+
+@media (max-width: 780px){  /*Nếu chiều rộng của trình duyệt nhỏ hơn hoặc bằng 780px thì thực thi các CSS*/
+    .A1{
+        width: 500px;
+    }
+    
+    .A2{
+        width: 100px;
+    }
+
+    .A3{
+        width: 100px;
+    }
+
+    .A4{
+        width: 450px;
+    }
+
+    .A5{
+        width: 250px;
+    }
+}

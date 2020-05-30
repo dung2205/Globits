@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-color: #3e3e3e;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#login-form{
+    position: absolute;
+    width: 350px;
+    top: 30px;
+    border: none;
+    border-radius: 7px;
+    padding-top: 10px;
+    background-color: white;
+    display: none;
+}
+
+.header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 280px;
+    border-radius: 4px;
+    border: solid 1px #c0c0c0;
+}
+
+.form-dang-nhap{
+    margin-left: 35px;
+}
+
+.dangnhap{
+    margin-top: 20px;
+    height: 38px;
+}
+
+#id{
+    padding-left: 35px;
+}
+
+#password{
+    padding-left: 35px;
+}
+
+.login-button{
+    background-color: #75ec93;
+    color: white;
+    border: none;
+    width: 280px;
+}
+
+.fa-user{
+    margin-left: -271px;
+}
+
+.fa-lock{
+    margin-left: -271px;
+}
+
+.forgot-password{
+    background-color: #dadada;
+    height: 45px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.forgot{
+    color: #989696;
+    font-size: 14px;
+    border: none;
+    background-color: #dadada;
+}
+
+.forgot:hover{
+    color: #989696;
+    text-decoration: none;
+}
+
+#dangnhap{
+    position: absolute;
+}
+
+.info{
+    color: rgb(255, 0, 0);
+}
+
+#username-info{
+    display: none;
+}
+
+#password-info{
+    display: none;
+}
+
+#wrong{
+    display: none;
+}
+
+.fa-spinner{
+    color: white;
+}

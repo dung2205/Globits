@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <script type="text/javascript" src="./JS/Bai6.js"></script>
+    <link rel="stylesheet" href="./css/Bai6.css" type="text/css">
+    
+</head>
+<body>
+    <!--Form đăng ký-->
+    <div class="container-fluid background">
+        <div id="login-form">
+            <h4 class="header">Member Login</h4>
+                <div class="form-dang-nhap">
+                    <div>
+                        <input type="text" class="dangnhap" id="id" placeholder="Username" name="username">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p class="info" id="username-info">Bạn phải nhập username</p>
+                    </div>
+                    <div>   
+                        <input type="text" class="dangnhap" id="password" placeholder="Password" name="password">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <p class="info" id="password-info">Bạn phải nhập password</p>
+                        <p class="wrong" id="wrong">Tài khoản hoặc mật khẩu không đúng</p>
+                    </div>
+                    <button class="login-button dangnhap" id="login" onclick="CheckIdAndPass()">Login</button>
+                </div>    
+                <div class="forgot-password">
+                    <input type="button" class="forgot" id="forgot" value="Forgot Password?" onclick="ForgotPassWord()">
+                </div>
+        </div>
+        <div id="change-password">
+            <h4 class="header">Change Password</h4>
+                <div class="form-dang-nhap">
+                    <div>
+                        <input type="text" class="changepass" id="oldpass" placeholder="OldPassword" name="oldpass">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p class="info" id="oldpass-info">Bắt buộc nhập</p>
+                    </div>
+                    <div>   
+                        <input type="text" class="changepass" id="newpass" placeholder="NewPassword" name="newpass">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <p class="info" id="newpass-info">Bắt buộc nhập</p>
+                    </div>
+                    <button class="login-button changepass" id="save" onclick="Luu()">Save</button>
+                    <p class="success" id="success">Bạn đã đổi mật khẩu thành công</p>
+                </div>    
+        </div>
+    </div>
+    <!--Kết thúc form đăng ký-->
+
+    <!--Button đăng nhập-->
+    <div class="container-fluid background">
+        <input type="button" value="Đăng nhập hệ thống" id="dangnhap" onclick="DangNhap()">
+    </div>
+    <!--Kết thúc Button đăng nhập-->
+
+    <!---->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
